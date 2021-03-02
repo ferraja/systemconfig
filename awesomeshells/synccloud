@@ -1,0 +1,7 @@
+### 关机时把本地数据同步到云端
+HOME=/home/culturecircle
+SYNCPATH=/home/culturecircle/pc-data/syncdrive
+zip -r -q ${SYNCPATH}/blog.zip  ${HOME}/blog
+rclone sync ${SYNCPATH} oss:/pc-data/syncdrive
+echo -n "本地数据同步到云端，时间: " >> ${HOME}/.cache/synccloud.log
+echo $(date "+%F %H:%M:%S") >> ${HOME}/.cache/synccloud.log

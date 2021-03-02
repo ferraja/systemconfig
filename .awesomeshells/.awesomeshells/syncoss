@@ -1,0 +1,13 @@
+### 每次关机时把本地数据同步到云端 
+
+HOME=/home/culturecircle
+
+# 使用阿里云oss同步
+
+# 将博客系统文件夹压缩到同步文件夹，这可以极大的减少文件数以提高校验速度，同时可以减少对云端数据的读请求次数，降低费用
+zip -r ${HOME}/syncdrive/blog.zip ${HOME}/blog
+rclone sync ${HOME}/syncdrive oss:/syncdrive 
+
+# log
+echo -n "本地数据同步到云端，时间: " >> ${HOME}/.awesomeshells/.synclog
+echo $(date "+%F %H:%M:%S") >> ${HOME}/.awesomeshells/.synclog

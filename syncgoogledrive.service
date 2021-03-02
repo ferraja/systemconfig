@@ -1,0 +1,14 @@
+[Unit]
+Description=sync local data to google drive
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=
+ExecStop=/bin/bash /home/culturecircle/systemconfig/awesomeshells/syncgoogledrive
+
+
+[Install]
+WantedBy=multi-user.target

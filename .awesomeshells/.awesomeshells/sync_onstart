@@ -1,0 +1,9 @@
+### 开机时将云端数据同步到本地
+
+HOME=/home/culturecircle
+
+rclone sync oss:syncdrive ${HOME}/syncdrive
+unzip-f ${HOME}/syncdrive/blog.zip
+
+echo -n "云端数据同步到本地，时间: " >> ${HOME}/.awesomeshells/.synclog
+echo $(date "+%F %H:%M:%S") >> ${HOME}/.awesomeshells/.synclog
