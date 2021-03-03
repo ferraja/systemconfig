@@ -1,7 +1,0 @@
-### 关机时把本地数据同步到云端
-HOME=/home/culturecircle
-
-zip ${HOME}/syncdrive/blog.zip ${HOME}/blog
-rclone sync ${HOME}/syncdrive oss:syncdrive
-echo -n "本地数据同步到云端，时间: " >> /tmp/syncoss.log
-echo $(date "+%F %H:%M:%S") >> /tmp/syncoss.log

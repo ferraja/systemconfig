@@ -99,4 +99,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH="$HOME/.awesomeshells:$PATH"
+#
+
+# configs
+setopt nonomatch
+
+
+# paths
+export PATH="$HOME/systemconfig/awesomeshells:$PATH"
+
+
