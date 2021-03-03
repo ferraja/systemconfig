@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=UnityHub
+Exec=/home/culturecircle/systemconfig/applications/unityhub/UnityHub.AppImage
+Terminal=false
+Type=Application
+Icon=/home/culturecircle/systemconfig/applications/unityhub/UnityHubIcon.png

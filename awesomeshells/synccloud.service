@@ -1,0 +1,14 @@
+[Unit]
+Description=sync local data to cloud
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=
+ExecStop=/bin/bash /home/culturecircle/systemconfig/awesomeshells/synccloud
+
+
+[Install]
+WantedBy=multi-user.target
