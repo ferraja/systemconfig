@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Godot
+Exec=/home/culturecircle/systemconfig/applications/godot/GodotEngine
+Terminal=false
+Type=Application
+Icon=/home/culturecircle/systemconfig/applications/godot/icon.png

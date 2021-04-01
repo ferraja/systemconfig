@@ -108,4 +108,3 @@ setopt nonomatch
 # paths
 export PATH="$HOME/systemconfig/awesomeshells:$PATH"
 
-
